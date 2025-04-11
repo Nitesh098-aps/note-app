@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#121212] text-white flex flex-col items-center min-h-screen p-5">
+
+    <!-- App Header -->
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mt-5 flex items-center gap-2">
+            📝 Notes App
+        </h1>
+        <p class="text-gray-400 mt-2">Save and manage your notes easily!</p>
+    </div>
+
+    <!-- Input Section (Top) -->
+    <div class="w-full max-w-2xl mt-6 bg-[#1e1e1e] p-5 rounded-lg shadow-lg">
+        <textarea id="noteInputTop" class="note-input" placeholder="Write your note here... (Enter: New Line, Shift+Enter: Add Note)"></textarea>
+        
+        <nav>'Enter': New Line, 'Shift+Enter': Add Note</nav>
+
+        <button id="addNoteBtnTop" class="add-btn">Add Note</button>
+    </div>
+
+    <!-- Notes Container -->
+    <div id="notesContainer" class="w-full max-w-2xl mt-6 space-y-3">
+        <p id="emptyMessage" class="text-gray-400 text-center mt-4">No notes added yet. Start by writing one above!</p>
+    </div>
+
+    <!-- Input Section (Bottom) -->
+    <!-- <div class="w-full max-w-2xl mt-6 bg-[#1e1e1e] p-5 rounded-lg shadow-lg">
+        <textarea id="noteInputBottom" class="note-input" placeholder="Write your note here... (Enter: New Line, Shift+Enter: Add Note)"></textarea>
+        <button id="addNoteBtnBottom" class="add-btn">Add Note</button>
+    </div> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
